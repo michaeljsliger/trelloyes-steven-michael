@@ -14,7 +14,7 @@ function App(props) {
           }
         }
         cardsArr.push(
-            <List header={STORE.lists[i].header} cards={objArr} />
+            <List key={STORE.lists[i].id} header={STORE.lists[i].header} cards={objArr} />
         )
     }
 

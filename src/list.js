@@ -6,7 +6,7 @@ function List(props) {
     const arr = [];
     for (let i = 0; i < props.cards.length; i++){
         arr.push(
-            <Card title={props.cards[i].title} content={props.cards[i].content} />
+            <Card key={props.cards[i].id} title={props.cards[i].title} content={props.cards[i].content} />
         )
     }
 
